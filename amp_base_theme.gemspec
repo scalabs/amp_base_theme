@@ -2,12 +2,12 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "amp_base_theme"
-  spec.version       = "0.1.0"
+  spec.version       = "0.0.1"
   spec.authors       = ["Lukas Himsel"]
   spec.email         = ["lukas@himsel.me"]
 
-  spec.summary       = "TODO: Write a short summary, because Rubygems requires one."
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "A starter pack for AMP-based (amp.dev) Jekyll sites"
+  spec.homepage      = "https://github.com/lukas-h/amp_base_theme"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README|_config\.yml)!i) }
