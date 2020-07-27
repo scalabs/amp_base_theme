@@ -27,6 +27,17 @@
     {% endif %}
 {% endif %}
 
+{% if site.pwa %}
+    {% if component_keys contains "amp-install-serviceworker" %}{% else %}
+
+        {% assign sw_comp = site.data.amp_components | where: "name", "amp-install-serviceworker" %}
+        {% assign components = components | concat: sw_comp %}
+        {% assign comp_name = "amp-install-serviceworker" | split: "" %}
+        {% assign component_keys = component_keys | concat: comp_name %}
+        
+    {% endif %}
+{% endif %}
+
 {% for comp in components %}
 
 <script async custom-element="{{ comp.name }}" src="https://cdn.ampproject.org/v0/{{ comp.name }}-{{ comp.version | default: "0.1" }}.js"></script>
