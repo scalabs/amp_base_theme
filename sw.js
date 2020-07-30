@@ -1,5 +1,4 @@
 ---
-permalink: "/sw.js"
 layout: none
 ---
 
