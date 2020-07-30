@@ -1,5 +1,6 @@
 ---
 layout: none
+permalink: "manifest.json"
 ---
 
 {
@@ -9,7 +10,7 @@ layout: none
     "display": "standalone",
     "theme_color": "{{ site.color }}",
     "background_color": "{{ site.background_color }}",
-    "lang": "{{ site.lang | default: "de_DE" }}",
+    "lang": "{{ site.lang | default: "de-DE" }}",
     "scope": "{{ site.baseurl }}",
     "orientation": "portrait-primary",
     "description": "{{ site.description }}",

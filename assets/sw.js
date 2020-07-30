@@ -1,5 +1,6 @@
 ---
 layout: none
+permalink: "sw.js"
 ---
 
 const version = '{{ site.time | date: '%Y%m%d%H%M%S' }}';

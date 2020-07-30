@@ -1,13 +1,13 @@
 ---
 layout: none
+permalink: "sitemap-posts.xml"
 ---
 
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-{% assign documents = site.pages %}
+{% assign documents = site.posts %}
 {% for p in documents %}
-{% if p.output == false and p.path contains "assets" %}
-{% else %}
+{% if p.output != false %}
 {% assign u = p.url %}{% assign usize = u | size | minus: 1 %}
 {% assign u =  u | slice: usize %}{% if u != '/' and u != 'l' and usize <= 1 %}{% assign x = p.url | append: '.html' %}{% else %}{% assign x = p.url %}{% endif %}
   <url>
