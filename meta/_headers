@@ -1,3 +1,7 @@
+---
+permalink: "_headers"
+---
+
 /*
     access-control-allow-credentials: true
     access-control-allow-headers: Access-Control-Allow-Origin, Access-Control-Allow-Credentials
