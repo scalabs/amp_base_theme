@@ -1,3 +1,10 @@
-<style amp-custom>
+{% if site.google_fonts %}
 
+    {% assign family_param = site.google_fonts | join: "|"" | replace: " ", "+" %}
+    <link href="https://fonts.googleapis.com/css?family={{ family_param }}" rel="stylesheet">
+
+{% endif %}
+
+<style amp-custom>
+    
 </style>

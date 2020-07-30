@@ -16,6 +16,19 @@
 
 {% endif %}
 
+{% if page.amp_type == "story" %}
+
+    {% if component_keys contains "amp-story" %}{% else %}
+
+        {% assign story_comp = site.data.amp_components | where: "name", "amp-story" %}
+        {% assign components = components | concat: story_comp %}
+        {% assign comp_name = "amp-story" | split: "" %}
+        {% assign component_keys = component_keys | concat: comp_name %}
+
+    {% endif %}
+
+{% endif %}
+
 {% if site.google_analytics or site.facebook_analytics %}
     {% if component_keys contains "amp-analytics" %}{% else %}
 
