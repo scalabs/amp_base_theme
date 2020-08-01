@@ -1,4 +1,6 @@
 ---
-google_analytics: BLABLA
-facebook_analytics: BLABLA
+google_analytics: G-XXXXXXXXXX
+facebook_analytics: XXXXXXXXXX
 pwa: true
+google_fonts:
+- Fira Sans

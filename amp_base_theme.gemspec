@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "amp_base_theme"
-  spec.version       = "0.0.6"
+  spec.version       = "0.0.8"
   spec.authors       = ["Lukas Himsel"]
   spec.email         = ["lukas@himsel.me"]
 
