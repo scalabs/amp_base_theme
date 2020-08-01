@@ -7,7 +7,7 @@ layout: compress
 {% include head.html %}
 
 <body>
-    {% if layout.amp_type =="story" %}
+    {% if page.amp_type =="story" %}
         {% include amp-story/body.html %}
     {% else %}
         {{ content }}

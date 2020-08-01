@@ -1,3 +1,4 @@
 ---
-layout: story
+layout: default
+amp_type: 'story'
 ---

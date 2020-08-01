@@ -1,4 +1,5 @@
 - name: amp-story
+  version: 1.0
 - name: amp-3d-gltf
 - name: amp-3q-player
 - name: amp-access-laterpay
