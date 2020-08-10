@@ -1,1 +1,1 @@
-gem build amp_base_theme && sudo gem install amp_base_theme-0.0.11.gem && gem contents amp_base_theme --version "=0.0.11" && gem push amp_base_theme-0.0.11.gem
+gem build amp_base_theme && sudo gem install amp_base_theme-0.0.12.gem && gem contents amp_base_theme --version "=0.0.12" && gem push amp_base_theme-0.0.12.gem

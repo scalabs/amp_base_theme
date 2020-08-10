@@ -40,6 +40,19 @@
     {% endif %}
 {% endif %}
 
+{% if site.cookie_consent %}
+
+    {% if component_keys contains "amp-analytics" %}{% else %}
+
+        {% assign consent_comp = site.data.amp_components | where: "name", "amp-consent" %}
+        {% assign components = components | concat: consent_comp %}
+        {% assign comp_name = "amp-consent" | split: "" %}
+        {% assign component_keys = component_keys | concat: comp_name %}
+
+    {% endif %}
+
+{% endif %}
+
 {% if site.pwa %}
     {% if component_keys contains "amp-install-serviceworker" %}{% else %}
 

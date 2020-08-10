@@ -5,3 +5,6 @@
 - feed.xml
 - robots.txt
 - humans.txt
+- manifest.json
+- sw.html
+- sw.js
