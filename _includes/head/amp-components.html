@@ -66,6 +66,6 @@
 
 {% for comp in components %}
 
-<script async custom-element="{{ comp.name }}" src="https://cdn.ampproject.org/v0/{{ comp.name }}-{{ comp.version | default: "0.1" }}.js"></script>
+<script async custom-{% if comp.template %}template{% else %}element{% endif %}="{{ comp.name }}" src="https://cdn.ampproject.org/v0/{{ comp.name }}-{{ comp.version | default: "0.1" }}.js"></script>
 
 {% endfor %}

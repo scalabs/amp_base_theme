@@ -28,6 +28,7 @@
 - name: amp-byside-content
 - name: amp-call-tracking
 - name: amp-carousel
+  version: 0.2
 - name: amp-connatix-player
 - name: amp-consent
 - name: amp-dailymotion
@@ -38,6 +39,7 @@
 - name: amp-dynamic-css-classes
 - name: amp-embedly-card
 - name: amp-experiment
+  version: 1.0
 - name: amp-facebook-comments
 - name: amp-facebook-like
 - name: amp-facebook-page
@@ -56,7 +58,6 @@
 - name: amp-ima-video
 - name: amp-image-lightbox
 - name: amp-image-slider
-- name: amp-img
 - name: amp-imgur
 - name: amp-inline-gallery
 - name: amp-inputmask
@@ -65,7 +66,6 @@
 - name: amp-izlesene
 - name: amp-jwplayer
 - name: amp-kaltura-player
-- name: amp-layout
 - name: amp-lightbox-gallery
 - name: amp-lightbox
 - name: amp-link-rewriter
@@ -77,15 +77,17 @@
 - name: amp-minute-media-player
 - name: amp-mowplayer
 - name: amp-mustache
+  version: 0.2
+  template: true
 - name: amp-nested-menu
 - name: amp-next-page
+  version: 1.0
 - name: amp-nexxtv-player
 - name: amp-o2-player
 - name: amp-ooyala-player
 - name: amp-orientation-observer
 - name: amp-pan-zoom
 - name: amp-pinterest
-- name: amp-pixel
 - name: amp-playbuzz
 - name: amp-position-observer
 - name: amp-powr-player
@@ -103,6 +105,7 @@
 - name: amp-soundcloud
 - name: amp-springboard-player
 - name: amp-sticky-ad
+  version: 1.0
 - name: amp-subscriptions-google
 - name: amp-subscriptions
 - name: amp-timeago
