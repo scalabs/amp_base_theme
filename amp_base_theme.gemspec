@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "amp_base_theme"
-  spec.version       = "0.0.10"
+  spec.version       = "0.0.11"
   spec.authors       = ["Lukas Himsel"]
   spec.email         = ["lukas@himsel.me"]
 
@@ -15,6 +15,7 @@ Gem::Specification.new do |spec|
   end
 
   spec.add_runtime_dependency "jekyll", "~> 4.1"
+  spec.add_runtime_dependency "jekyll-data", "~> 1.1"
   spec.add_development_dependency "bundler"
 
 end
