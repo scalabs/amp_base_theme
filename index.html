@@ -12,11 +12,11 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
     {% if page.url == "/" %}
     <div class="row remove-site-content-margin">
         {% assign latest_post = site.posts[0] %}
-        <div class="col-md-7">
+        <div class="col-md-8">
             <div class="card border-0 mb-4 box-shadow">
                 <a>
                     <div class="topfirstimage" style="background-image: url({{site.baseurl}}/assets/images/start.jpg); height:
-                        300px; background-size: cover; background-repeat: no-repeat;"></div>
+                        350px; background-size: cover; background-repeat: no-repeat;"></div>
                 </a>
                 <div class="card-body px-0 pb-0 d-flex flex-column align-items-start">
                     <h2>
@@ -28,90 +28,72 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
                 </div>
             </div>
         </div>
-
-        <div class="col-md-5">
+        <div class="col-md-4">
             {%- assign second_post = site.posts[1] -%}
             <div class="mb-3 d-flex align-items-center">
                 {% if second_post.image %}
-                <div class="col-md-4">
+                <div class="col-md-5">
                     <a>
-                        <img class="w-100" src="{% if second_post.image contains " ://" %}{{ second_post.image }}{% else
-                            %}{{ second_post.image | absolute_url }}{% endif %}" alt="{{ second_post.title }}">
+                        <img class="w-100"
+                            src="https://cdn.shopify.com/s/files/1/0605/5991/7273/files/PinkSuperfoodDoseComic_360x.jpg?v=1655908026">
                     </a>
                 </div>
                 {% endif %}
                 <div>
-                    <h2 class="mb-2 h6 font-weight-bold">
-                        <a class="text-dark">Langfristiges Wohnen für Monteure
-                            und Leiharbeiter</a>
-                    </h2>
-                    <small class="d-block text-muted">
-                        In <span class="catlist">
-                            {% for category in second_post.categories %}
-                            <a class="text-capitalize text-muted smoothscroll">{{ category
-                                }}</a><span class="sep">, </span>
-                            {% endfor %}
-                        </span>
-                    </small>
-                    <small class="text-muted">
-                        {{ second_post.date | date: '%b %d, %Y' }}
-                    </small>
-                </div>
-            </div>
-            {%- assign third_post = site.posts[2] -%}
-            <div class="mb-3 d-flex align-items-center">
-                {% if third_post.image %}
-                <div class="col-md-4">
-                    <a>
-                        <img class="w-100" src="{% if third_post.image contains " ://" %}{{ third_post.image }}{% else
-                            %}{{site.baseurl}}/{{ third_post.image }}{% endif %}" alt="{{ third_post.title }}">
-                    </a>
-                </div>
-                {% endif %}
-                <div>
-                    <h2 class="mb-2 h6 font-weight-bold">
-                        <a class="text-dark">Die passende Ferienwohnunge
-                            für Sie</a>
-                    </h2>
-                    <small class="d-block text-muted">
-                        In <span class="catlist">
-                            {% for category in third_post.categories %}
-                            <a class="text-capitalize text-muted smoothscroll">{{ category
-                                }}</a><span class="sep">, </span>
-                            {% endfor %}
-                        </span>
-                    </small>
-                    <small class="text-muted">
-                        {{ third_post.date | date: '%b %d, %Y' }}
-                    </small>
+                    <h3 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark">Add a new revenue stream</a>
+                    </h3>
+
                 </div>
             </div>
             {%- assign fourth_post = site.posts[3] -%}
             <div class="mb-3 d-flex align-items-center">
                 {% if fourth_post.image %}
-                <div class="col-md-4">
+                <div class="col-md-5">
                     <a>
-                        <img class="w-100" src="{% if fourth_post.image contains " ://" %}{{ fourth_post.image }}{% else
-                            %}{{site.baseurl}}/{{ fourth_post.image }}{% endif %}" alt="{{ fourth_post.title }}">
+                        <img class="w-100"
+                            src="https://cdn.shopify.com/s/files/1/0605/5991/7273/files/Smoothie_ShakeDoseComic_360x.jpg?v=1655908020">
                     </a>
                 </div>
                 {% endif %}
                 <div>
-                    <h2 class="mb-2 h6 font-weight-bold">
-                        <a class="text-dark">In unmittelbarer Nähe zu Iphofen
-                            und Kitzingen</a>
-                    </h2>
-                    <small class="d-block text-muted">
-                        In <span class="catlist">
-                            {% for category in fourth_post.categories %}
-                            <a class="text-capitalize text-muted smoothscroll">{{ category
-                                }}</a><span class="sep">, </span>
-                            {% endfor %}
-                        </span>
-                    </small>
-                    <small class="text-muted">
-                        {{ fourth_post.date | date: '%b %d, %Y' }}
-                    </small>
+                    <h3 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark">With great products to enhance your menu</a>
+                    </h3>
+
+                </div>
+            </div>
+            <div class="mb-3 d-flex align-items-center">
+                {% if fourth_post.image %}
+                <div class="col-md-5">
+                    <a>
+                        <img class="w-100"
+                            src="https://cdn.shopify.com/s/files/1/0605/5991/7273/files/GoldenDoseComic_360x.jpg?v=1655908252">
+                    </a>
+                </div>
+                {% endif %}
+                <div>
+                    <h3 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark">Easy to learn and prepare</a>
+                    </h3>
+
+                </div>
+            </div>
+            {%- assign third_post = site.posts[2] -%}
+            <div class="mb-3 d-flex align-items-center">
+                {% if third_post.image %}
+                <div class="col-md-5">
+                    <a>
+                        <img class="w-100"
+                            src="https://cdn.shopify.com/s/files/1/0605/5991/7273/files/SmootailDoseComic_360x.jpg">
+                    </a>
+                </div>
+                {% endif %}
+                <div>
+                    <h3 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark">See your customers' delight</a>
+                    </h3>
+
                 </div>
             </div>
 
@@ -130,9 +112,7 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
                         With our innovative drink concepts for professional use in your restaurant, café, hotel, bar,
                         club, festival or delivery service.<br><br>
 
-                        YOU NAME IT, THE YEAH BLEND MAKES IT.<br><br>
-
-                        Register and receive SPECIAL B2B PRICES as a restaurateur.
+                        YOU NAME IT, THE YEAH BLEND MAKES IT.
                     </p>
                 </div>
                 <div class="col-md-6 d-none d-md-block pr-0 br-radius-right"
@@ -146,23 +126,6 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
 
 
     {% endif %}
-
-    <div class="row">
-        <div class="col-md-3 col-sm-6">
-            <img
-                src="https://cdn.shopify.com/s/files/1/0605/5991/7273/files/PinkSuperfoodDoseComic_360x.jpg?v=1655908026">
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <img src="https://cdn.shopify.com/s/files/1/0605/5991/7273/files/SmootailDoseComic_360x.jpg?v=1655908018">
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <img
-                src="https://cdn.shopify.com/s/files/1/0605/5991/7273/files/Smoothie_ShakeDoseComic_360x.jpg?v=1655908020">
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <img src="https://cdn.shopify.com/s/files/1/0605/5991/7273/files/GoldenDoseComic_360x.jpg?v=1655908252">
-        </div>
-    </div>
 
     <div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem bg-lightblue position-relative">
         <div class="pl-4 pr-0 h-100 tofront">
@@ -193,7 +156,7 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
 
     <div class="row mt-3">
 
-        <div class="col-md-8 main-loop">
+        <div class="col-md-9 main-loop">
 
             <h4 class="font-weight-bold spanborder"><span>Our products</span></h4>
 
@@ -205,7 +168,7 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
             {% endfor %}
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-3">
             {% include sidebar-featured.html %}
         </div>
 
@@ -255,13 +218,13 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
             <img src="https://cdn.shopify.com/s/files/1/0605/5991/7273/files/projekt-erklaert_1080x.jpg?v=1654020578">
         </div>
         <div class="col-md-6">
-            <h3>GUTES TUN, YEAH!</h3>
+            <h3>DOING GOOD, YEAH!</h3>
             <p class="lead">
-                The Yeah Blend unterstützt Centre Ya Bana im Kongo:<br><br>
+                The Yeah Blend supports Centre Ya Bana in the Congo:<br><br>
 
-                Eine Grundschule mit angeschlossener Bäckerei.<br><br>
+                An elementary school with an attached bakery.<br><br>
 
-                Der laufende Betrieb der Grundschule Centre Ya Bana wird durch eine angegliederte Bäckerei finanziert.
+                The day-to-day operations of the Centre Ya Bana elementary school are financed by an affiliated bakery.
             </p>
         </div>
     </div>

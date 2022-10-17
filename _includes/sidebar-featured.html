@@ -1,21 +1,50 @@
 <div class="sticky-top sticky-top-offset">
-    <h4 class="font-weight-bold spanborder"><span>Aktivitäten</span></h4>  
-    <ol class="list-featured">				
-        {% for post in site.tags.featured %}                
-            <li class="mb-4">
+    <h4 class="font-weight-bold spanborder"><span>Our extras</span></h4>
+    <ol class="list-featured">
+        <li class="mb-4">
             <span>
                 <h6 class="font-weight-bold">
-                    <a href="{{site.baseurl}}{{ post.url }}" class="text-dark">{{ post.title }}</a>
+                    <a href="{{site.baseurl}}{{ post.url }}" class="text-dark">Scoop</a>
+                    <img src="https://cdn.shopify.com/s/files/1/0605/5991/7273/products/SmootailMessloeffel300ml_1_540x.jpg?v=1654775862" width="100">
                 </h6>
                 <span class="d-block text-muted">
-                    In <span class="catlist">
-                    {% for category in post.categories %}
-                    <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
-                    {% endfor %}
+                    <span class="catlist">
+                        <a class="text-capitalize text-muted smoothscroll"
+                            href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span
+                            class="sep">, </span>
                     </span>
                 </span>
             </span>
-            </li>                
-        {% endfor %}   
+        </li>
+        <li class="mb-4">
+            <span>
+                <h6 class="font-weight-bold">
+                    <a href="{{site.baseurl}}{{ post.url }}" class="text-dark">Bucket</a>
+                    <img src="https://cdn.shopify.com/s/files/1/0605/5991/7273/products/SmoothieBucket_540x.jpg?v=1654777000" width="100">
+                </h6> 
+                <span class="d-block text-muted">
+                    <span class="catlist">
+                        <a class="text-capitalize text-muted smoothscroll"
+                            href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span
+                            class="sep">, </span>
+                    </span>
+                </span>
+            </span>
+        </li>
+        <li class="mb-4">
+            <span>
+                <h6 class="font-weight-bold">
+                    <a href="{{site.baseurl}}{{ post.url }}" class="text-dark">Blender</a>
+                    <img width="100" >
+                </h6>
+                <span class="d-block text-muted">
+                    <span class="catlist">
+                        <a class="text-capitalize text-muted smoothscroll"
+                            href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span
+                            class="sep">, </span>
+                    </span>
+                </span>
+            </span>
+        </li>
     </ol>
-</div> 
+</div>

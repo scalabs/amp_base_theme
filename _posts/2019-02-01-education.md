@@ -5,8 +5,8 @@ categories: [ Jekyll, tutorial ]
 image: https://cdn.shopify.com/s/files/1/0605/5991/7273/products/PINKSUPERFOODLATTE_1800x1800.png
 ---
 
-LATTEMIX MIT GEWÜRZEN UND FRUCHTPULVER
+LATTE MIX WITH SPICES AND FRUIT POWDER
  
 
-Die farbenfrohe Kombination aus Superfoods wie Acai und Goji ist fruchtig-herb und trägt dich mit vielen guten Nährstoffen durch den Tag.
-Unser Pink Superfood Latte ist der perfekte Booster für Dein Immunsystem und sorgt für gute Laune über den ganzen Tag.
+The colorful combination of superfoods like acai and goji is fruity-tart and carries you through the day with lots of good nutrients.
+Our Pink Superfood Latte is the perfect booster for your immune system and keeps you in a good mood all day long.
