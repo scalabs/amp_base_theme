@@ -1,0 +1,270 @@
+---
+title: "Startseite"
+layout: default
+pagination:
+enabled: true
+description: "A great Jekyll theme developed by Sal @wowthemesnet."
+---
+
+
+<div class="container">
+
+    {% if page.url == "/" %}
+    <div class="row remove-site-content-margin">
+        {% assign latest_post = site.posts[0] %}
+        <div class="col-md-7">
+            <div class="card border-0 mb-4 box-shadow">
+                <a>
+                    <div class="topfirstimage" style="background-image: url({{site.baseurl}}/assets/images/start.jpg); height:
+                        300px; background-size: cover; background-repeat: no-repeat;"></div>
+                </a>
+                <div class="card-body px-0 pb-0 d-flex flex-column align-items-start">
+                    <h2>
+                        <small>Innovative drink concepts for</small><br>
+                        <a class="text-dark">for more turnover in your
+                            gastronomy
+                            business</a>
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            {%- assign second_post = site.posts[1] -%}
+            <div class="mb-3 d-flex align-items-center">
+                {% if second_post.image %}
+                <div class="col-md-4">
+                    <a>
+                        <img class="w-100" src="{% if second_post.image contains " ://" %}{{ second_post.image }}{% else
+                            %}{{ second_post.image | absolute_url }}{% endif %}" alt="{{ second_post.title }}">
+                    </a>
+                </div>
+                {% endif %}
+                <div>
+                    <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark">Langfristiges Wohnen für Monteure
+                            und Leiharbeiter</a>
+                    </h2>
+                    <small class="d-block text-muted">
+                        In <span class="catlist">
+                            {% for category in second_post.categories %}
+                            <a class="text-capitalize text-muted smoothscroll">{{ category
+                                }}</a><span class="sep">, </span>
+                            {% endfor %}
+                        </span>
+                    </small>
+                    <small class="text-muted">
+                        {{ second_post.date | date: '%b %d, %Y' }}
+                    </small>
+                </div>
+            </div>
+            {%- assign third_post = site.posts[2] -%}
+            <div class="mb-3 d-flex align-items-center">
+                {% if third_post.image %}
+                <div class="col-md-4">
+                    <a>
+                        <img class="w-100" src="{% if third_post.image contains " ://" %}{{ third_post.image }}{% else
+                            %}{{site.baseurl}}/{{ third_post.image }}{% endif %}" alt="{{ third_post.title }}">
+                    </a>
+                </div>
+                {% endif %}
+                <div>
+                    <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark">Die passende Ferienwohnunge
+                            für Sie</a>
+                    </h2>
+                    <small class="d-block text-muted">
+                        In <span class="catlist">
+                            {% for category in third_post.categories %}
+                            <a class="text-capitalize text-muted smoothscroll">{{ category
+                                }}</a><span class="sep">, </span>
+                            {% endfor %}
+                        </span>
+                    </small>
+                    <small class="text-muted">
+                        {{ third_post.date | date: '%b %d, %Y' }}
+                    </small>
+                </div>
+            </div>
+            {%- assign fourth_post = site.posts[3] -%}
+            <div class="mb-3 d-flex align-items-center">
+                {% if fourth_post.image %}
+                <div class="col-md-4">
+                    <a>
+                        <img class="w-100" src="{% if fourth_post.image contains " ://" %}{{ fourth_post.image }}{% else
+                            %}{{site.baseurl}}/{{ fourth_post.image }}{% endif %}" alt="{{ fourth_post.title }}">
+                    </a>
+                </div>
+                {% endif %}
+                <div>
+                    <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark">In unmittelbarer Nähe zu Iphofen
+                            und Kitzingen</a>
+                    </h2>
+                    <small class="d-block text-muted">
+                        In <span class="catlist">
+                            {% for category in fourth_post.categories %}
+                            <a class="text-capitalize text-muted smoothscroll">{{ category
+                                }}</a><span class="sep">, </span>
+                            {% endfor %}
+                        </span>
+                    </small>
+                    <small class="text-muted">
+                        {{ fourth_post.date | date: '%b %d, %Y' }}
+                    </small>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem bg-lightblue position-relative">
+        <div class="pl-4 pr-0 h-100 tofront">
+            <div class="row justify-content-between">
+                <div class="col-md-6 pt-6 pb-6 pr-lg-4 align-self-center">
+                    <h1 class="mb-3"><small>Delight</small><br>
+
+                        Your Customers!</h1>
+                    <p class="mb-3 lead">
+                        With our innovative drink concepts for professional use in your restaurant, café, hotel, bar,
+                        club, festival or delivery service.<br><br>
+
+                        YOU NAME IT, THE YEAH BLEND MAKES IT.<br><br>
+
+                        Register and receive SPECIAL B2B PRICES as a restaurateur.
+                    </p>
+                </div>
+                <div class="col-md-6 d-none d-md-block pr-0 br-radius-right"
+                    style="background-size:cover;background-image:url(/assets/images/store.jpg);">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    {% endif %}
+
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <img
+                src="https://cdn.shopify.com/s/files/1/0605/5991/7273/files/PinkSuperfoodDoseComic_360x.jpg?v=1655908026">
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <img src="https://cdn.shopify.com/s/files/1/0605/5991/7273/files/SmootailDoseComic_360x.jpg?v=1655908018">
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <img
+                src="https://cdn.shopify.com/s/files/1/0605/5991/7273/files/Smoothie_ShakeDoseComic_360x.jpg?v=1655908020">
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <img src="https://cdn.shopify.com/s/files/1/0605/5991/7273/files/GoldenDoseComic_360x.jpg?v=1655908252">
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem bg-lightblue position-relative">
+        <div class="pl-4 pr-0 h-100 tofront">
+            <div class="row justify-content-between">
+                <div class="col-md-6 d-none d-md-block pr-0 br-radius-left"
+                    style="display: flex !important; justify-content: center; align-items: center;padding-right: 2rem;">
+                    <img
+                        src="https://cdn.shopify.com/s/files/1/0605/5991/7273/files/Immermitohne_HP_9536bb45-9bd8-4bd7-9ce6-310c53b10c9a_900x.jpg?v=1654782578">
+                </div>
+                <div class="col-md-6 pt-6 pb-6 pr-lg-4 align-self-center">
+                    <h1 class="mb-3">WHY YEAH?</h1>
+                    <p class="mb-3 lead">
+                        Our products are always:
+                    <p style="padding-left: 1rem">- Vegan </p>
+                    <p style="padding-left: 1rem">- Gluten Free</p>
+                    <p style="padding-left: 1rem">- Without palm oil</p>
+                    <p style="padding-left: 1rem">- Without colorants</p>
+                    <p style="padding-left: 1rem">- Without preservatives</p>
+                    <p style="padding-left: 1rem">- Without artificial flavors</p>
+                    <p style="padding-left: 1rem">- Lactose free</p>
+                    <p style="padding-left: 1rem">- Without emulsifiers & stabilizers</p>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+
+        <div class="col-md-8 main-loop">
+
+            <h4 class="font-weight-bold spanborder"><span>Our products</span></h4>
+
+
+            {% for post in site.posts limit: 4 %}
+
+            {% include main-loop-card.html %}
+
+            {% endfor %}
+        </div>
+
+        <div class="col-md-4">
+            {% include sidebar-featured.html %}
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+
+            <img
+                src="https://cdn.shopify.com/s/files/1/0605/5991/7273/files/App_Google1024_500Rahmen_1080x.jpg?v=1655892452">
+        </div>
+        <div class="col-md-6">
+            <h3>
+                THE YEAH APP
+            </h3>
+            <p class="lead">
+
+                Your digital coffee, shake, smoothie & cocktail bar.<br><br>
+
+                Download now for free in the App Store or Google Play Store.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="row" style="padding: 3rem 0;">
+        <div class="col-md-3 col-sm-6">
+            <img src="https://cdn.shopify.com/s/files/1/0605/5991/7273/files/Smiley_3_360x.jpg?v=1655894372"
+                height="130">
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <img src="https://cdn.shopify.com/s/files/1/0605/5991/7273/files/LPS_PINK_360x.jpg?v=1655894019"
+                height="100">
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <img src="https://cdn.shopify.com/s/files/1/0605/5991/7273/files/Herz_klein_360x.jpg?v=1655894517"
+                height="130">
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <img src="https://cdn.shopify.com/s/files/1/0605/5991/7273/files/Yeah_pink_360x.jpg?v=1655906691"
+                height="130">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <img src="https://cdn.shopify.com/s/files/1/0605/5991/7273/files/projekt-erklaert_1080x.jpg?v=1654020578">
+        </div>
+        <div class="col-md-6">
+            <h3>GUTES TUN, YEAH!</h3>
+            <p class="lead">
+                The Yeah Blend unterstützt Centre Ya Bana im Kongo:<br><br>
+
+                Eine Grundschule mit angeschlossener Bäckerei.<br><br>
+
+                Der laufende Betrieb der Grundschule Centre Ya Bana wird durch eine angegliederte Bäckerei finanziert.
+            </p>
+        </div>
+    </div>
+
+
+</div>
